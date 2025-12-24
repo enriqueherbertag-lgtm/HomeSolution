@@ -1,4 +1,4 @@
-# 🏠 HomeSolution
+# HomeSolution
 
 > Conectando técnicos con clientes en tiempo real - La revolución de los servicios a domicilio
 
@@ -7,7 +7,7 @@
 ## ¿Qué es HomeSolution?
 HomeSolution es una aplicación móvil **estilo Uber** que conecta a usuarios con técnicos y maestros de oficios calificados en tiempo real. Desde fontanería hasta programación, todo en un solo lugar.
 
-## ✨ Características principales
+## Características principales
 - **Geolocalización en tiempo real** de técnicos cercanos
 - **Sistema de calificaciones y reseñas** transparente
 - **Chat integrado** para coordinación instantánea
