@@ -4,35 +4,35 @@
 
 ![HomeSolution Banner](https://via.placeholder.com/1200x400/3B82F6/FFFFFF?text=HomeSolution+%F0%9F%9A%95+Uber+para+t%C3%A9cnicos+y+maestros)
 
-## 📱 ¿Qué es HomeSolution?
+## ¿Qué es HomeSolution?
 HomeSolution es una aplicación móvil **estilo Uber** que conecta a usuarios con técnicos y maestros de oficios calificados en tiempo real. Desde fontanería hasta programación, todo en un solo lugar.
 
 ## ✨ Características principales
-- ✅ **Geolocalización en tiempo real** de técnicos cercanos
-- ✅ **Sistema de calificaciones y reseñas** transparente
-- ✅ **Chat integrado** para coordinación instantánea
-- ✅ **Pagos seguros** integrados en la app
-- ✅ **Verificación de técnicos** con certificaciones
-- ✅ **Historial completo** de servicios
-- ✅ **Multi-categorías**: Fontanería, electricidad, programación, diseño, etc.
-- ✅ **Notificaciones push** en tiempo real
+- **Geolocalización en tiempo real** de técnicos cercanos
+- **Sistema de calificaciones y reseñas** transparente
+- **Chat integrado** para coordinación instantánea
+- **Pagos seguros** integrados en la app
+- **Verificación de técnicos** con certificaciones
+- **Historial completo** de servicios
+- **Multi-categorías**: Fontanería, electricidad, programación, diseño, etc.
+- **Notificaciones push** en tiempo real
 
-## 🏗️ Arquitectura
+## Arquitectura
 HomeSolution/
-├── 📱 Frontend Móvil (React Native/Flutter)
+├──  Frontend Móvil (React Native/Flutter)
 │ ├── Cliente
 │ └── Técnico
-├── ⚙️ Backend API (Node.js + Express)
+├──  Backend API (Node.js + Express)
 │ ├── Autenticación JWT
 │ ├── Geolocalización
 │ ├── Sistema de Pagos (Stripe/MercadoPago)
 │ └── WebSockets (Chat en tiempo real)
-├── 🗄️ Base de Datos (PostgreSQL)
+├── Base de Datos (PostgreSQL)
 │ ├── Usuarios
 │ ├── Técnicos
 │ ├── Solicitudes
 │ └── Transacciones
-├── 🗺️ Servicios Externos
+├── Servicios Externos
 │ ├── Google Maps API
 │ ├── Stripe/MercadoPago
 │ └── Firebase (Notificaciones Push)
@@ -43,7 +43,7 @@ HomeSolution/
 
 text
 
-## 🚀 Comenzando
+## Comenzando
 
 ### Prerrequisitos
 - Node.js 18+
@@ -99,7 +99,7 @@ Reseñas y calificaciones
 
 Transacciones de pago
 
-🔌 API
+API
 Documentación completa disponible en docs/API.md
 
 Endpoints principales:
@@ -114,7 +114,7 @@ POST /api/v1/chat/message - Enviar mensaje
 
 POST /api/v1/payments/create - Procesar pago
 
-🛠️ Tecnologías
+Tecnologías
 Frontend Móvil: React Native / Flutter
 
 Backend: Node.js + Express + PostgreSQL
@@ -132,7 +132,7 @@ Chat en tiempo real: WebSockets (Socket.io)
 📄 Licencia
 Este proyecto está bajo una licencia personalizada. Ver LICENSE.md para más detalles.
 
-⚠️ IMPORTANTE:
+IMPORTANTE:
 
 El código es de consulta y estudio únicamente
 
@@ -140,17 +140,16 @@ No está permitido su uso comercial sin autorización
 
 Para licencias comerciales, contactar al autor
 
-🤝 Contribuir
+Contribuir
 Ver CONTRIBUTING.md para pautas de contribución.
-
-📞 Contacto
+Contacto
 Autor: Enrique Aguayo H.
 
 Email: eaguayo@migst.cl
 
 GitHub: @enriqueherbertag-lgtm
 
-🙏 Agradecimientos
+Agradecimientos
 Gracias a toda la comunidad de desarrolladores que inspira proyectos innovadores como este.
 
 "Conectando habilidades con necesidades, un servicio a la vez" 🔧🏠
@@ -159,7 +158,7 @@ text
 
 ---
 
-## 🛠️ **CÓMO ACTUALIZAR:**
+## **CÓMO ACTUALIZAR:**
 
 1. **Abrí** tu archivo `README.md`
 2. **Borrá TODO** el contenido actual
@@ -169,10 +168,10 @@ text
 
 ---
 
-## ✅ **MEJORAS INCLUIDAS:**
-- 📊 **Arquitectura visual** más detallada
-- 🛠️ **Tecnologías** listadas claramente
-- 🚀 **Instrucciones de instalación** específicas
-- 📁 **Estructura de proyecto** completa
+## **MEJORAS INCLUIDAS:**
+- **Arquitectura visual** más detallada
+- **Tecnologías** listadas claramente
+- **Instrucciones de instalación** específicas
+- **Estructura de proyecto** completa
 - 📞 **Contacto** con tus datos reales
 - 🎨 **Formato más profesional**
