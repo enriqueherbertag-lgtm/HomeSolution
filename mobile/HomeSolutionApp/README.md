@@ -1,4 +1,4 @@
-# 📱 HomeSolution Mobile App
+#HomeSolution Mobile App
 
 > Aplicación React Native para la plataforma HomeSolution - Conectando técnicos con clientes
 
