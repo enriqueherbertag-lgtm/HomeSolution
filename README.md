@@ -173,5 +173,5 @@ text
 - **Tecnologías** listadas claramente
 - **Instrucciones de instalación** específicas
 - **Estructura de proyecto** completa
-- 📞 **Contacto** con tus datos reales
-- 🎨 **Formato más profesional**
+- **Contacto** con tus datos reales
+- **Formato más profesional**
