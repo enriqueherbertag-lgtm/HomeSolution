@@ -1,7 +1,7 @@
 https://api.homesolution.app/v1
 Para desarrollo local: http://localhost:3000/api/v1
 
-🔐 Autenticación
+Autenticación
 Registrar Usuario
 POST /api/v1/auth/register
 
@@ -37,7 +37,7 @@ json
   "token": "eyJhbGciOiJIUzI1NiIs...",
   "user_type": "client"
 }
-👤 Usuario
+Usuario
 Ver Mi Perfil
 GET /api/v1/users/profile
 
@@ -121,7 +121,7 @@ json
   "request_id": 789,
   "message": "Hola, llego en 20 minutos"
 }
-💳 Pagos
+Pagos
 Crear Pago
 POST /api/v1/payments/create
 
@@ -137,14 +137,14 @@ json
   "payment_id": "pay_12345",
   "client_secret": "pi_123_secret_456"
 }
-🚨 Códigos de Error
+Códigos de Error
 Código	Significado
 200	Todo OK
 400	Datos incorrectos
 401	No autorizado (token inválido)
 404	No encontrado
 500	Error del servidor
-📞 Soporte
+Soporte
 Para preguntas técnicas: eaguayo@migst.cl
 
 
