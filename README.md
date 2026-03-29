@@ -131,9 +131,6 @@ Notificaciones: Firebase Cloud Messaging
 
 Chat en tiempo real: WebSockets (Socket.io)
 
-📄 Licencia
-Este proyecto está bajo una licencia personalizada. Ver LICENSE.md para más detalles.
-
 IMPORTANTE:
 
 El código es de consulta y estudio únicamente
