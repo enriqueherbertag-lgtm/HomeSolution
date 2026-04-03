@@ -1,173 +1,60 @@
-# HomeSolution
+# HomeSolution: Conecta técnicos y clientes en tiempo real
 
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![EN](https://img.shields.io/badge/English-version-blue.svg)](./README.en.md)
 
-> Conectando técnicos con clientes en tiempo real - La revolución de los servicios a domicilio
+**Una aplicación móvil estilo Uber para servicios a domicilio. Encuentra técnicos calificados cerca de ti, en minutos.**
 
-## ¿Qué es HomeSolution?
-HomeSolution es una aplicación móvil **estilo Uber** que conecta a usuarios con técnicos y maestros de oficios calificados en tiempo real. Desde fontanería hasta programación, todo en un solo lugar.
+## ¿Qué problema resuelve?
 
-## Características principales
-- **Geolocalización en tiempo real** de técnicos cercanos
-- **Sistema de calificaciones y reseñas** transparente
-- **Chat integrado** para coordinación instantánea
-- **Pagos seguros** integrados en la app
-- **Verificación de técnicos** con certificaciones
-- **Historial completo** de servicios
-- **Multi-categorías**: Fontanería, electricidad, programación, diseño, etc.
-- **Notificaciones push** en tiempo real
+Encontrar un técnico de confianza es difícil. Los precios no son transparentes. No sabes quién está disponible cerca. Los técnicos calificados no tienen una plataforma para ofrecer sus servicios.
+
+**HomeSolution conecta oferta y demanda en tiempo real.**
+
+## ¿Qué hace?
+
+| Característica | Descripción |
+|----------------|-------------|
+| Geolocalización | Muestra técnicos cercanos en tiempo real |
+| Calificaciones y reseñas | Sistema transparente de reputación |
+| Chat integrado | Coordinación instantánea |
+| Pagos seguros | Stripe / MercadoPago |
+| Verificación de técnicos | Certificaciones y validación de perfiles |
+| Historial de servicios | Registro completo de trabajos |
+| Multi-categorías | Fontanería, electricidad, programación, diseño, etc. |
+| Notificaciones push | Alertas en tiempo real |
+
+## ¿Para quién es?
+
+- **Usuarios**: necesitan un técnico rápido, confiable y con precio claro.
+- **Técnicos**: quieren encontrar clientes sin pagar comisiones abusivas.
+- **Empresas de servicios**: pueden gestionar su flota de trabajadores.
 
 ## Arquitectura
-HomeSolution/
-├──  Frontend Móvil (React Native/Flutter)
-│ ├── Cliente
-│ └── Técnico
-├──  Backend API (Node.js + Express)
-│ ├── Autenticación JWT
-│ ├── Geolocalización
-│ ├── Sistema de Pagos (Stripe/MercadoPago)
-│ └── WebSockets (Chat en tiempo real)
-├── Base de Datos (PostgreSQL)
-│ ├── Usuarios
-│ ├── Técnicos
-│ ├── Solicitudes
-│ └── Transacciones
-├── Servicios Externos
-│ ├── Google Maps API
-│ ├── Stripe/MercadoPago
-│ └── Firebase (Notificaciones Push)
-└── 📊 Admin Panel (React)
-├── Dashboard
-├── Gestión de usuarios
-└── Analytics
 
-text
+| Capa | Tecnología |
+|------|------------|
+| Frontend móvil | React Native / Flutter |
+| Backend API | Node.js + Express |
+| Base de datos | PostgreSQL |
+| Autenticación | JWT |
+| Geolocalización | Google Maps API |
+| Pagos | Stripe / MercadoPago |
+| Notificaciones | Firebase Cloud Messaging |
+| Chat en tiempo real | WebSockets (Socket.io) |
 
-## Comenzando
+## Estado actual
 
-### Prerrequisitos
-- Node.js 18+
-- PostgreSQL 14+
-- React Native/Flutter SDK
-- Cuenta Google Maps API
+- Backend funcional.
+- API documentada.
+- Esquema de base de datos definido.
+- Frontend móvil en desarrollo.
+- Panel de administración pendiente.
 
-### Instalación
-```bash
-# Clonar repositorio
-git clone https://github.com/enriqueherbertag-lgtm/HomeSolution.git
-cd HomeSolution
+## Licencia
 
-# Instalar dependencias del backend
-cd src/backend
-npm install
+Copyright © 2026 Enrique Aguayo. Todos los derechos reservados.
 
-# Configurar entorno
-cp .env.example .env
-# Editar .env con tus credenciales
+## Autor
 
-# Iniciar base de datos
-psql -U postgres -f ../database/schema.sql
-
-# Ejecutar servidor de desarrollo
-npm run dev
-Estructura del Proyecto
-text
-HomeSolution/
-├── LICENSE.md              # Licencia personalizada
-├── README.md               # Este archivo
-├── CONTRIBUTING.md         # Guía de contribución
-├── .gitignore              
-├── database/
-│   └── schema.sql          # Esquema de base de datos
-├── docs/
-│   └── API.md              # Documentación completa de API
-└── src/
-    └── backend/            # Código fuente del backend
-        ├── server.js       # Servidor principal
-        ├── package.json    # Dependencias
-        └── .env.example    # Variables de entorno (plantilla)
-📊 Base de Datos
-El esquema inicial se encuentra en database/schema.sql con tablas para:
-
-Usuarios (clientes y técnicos)
-
-Técnicos (información profesional)
-
-Solicitudes de servicio
-
-Reseñas y calificaciones
-
-Transacciones de pago
-
-API
-Documentación completa disponible en docs/API.md
-
-Endpoints principales:
-
-POST /api/v1/auth/register - Registro de usuarios
-
-GET /api/v1/technicians/nearby - Buscar técnicos cercanos
-
-POST /api/v1/requests - Crear solicitud de servicio
-
-POST /api/v1/chat/message - Enviar mensaje
-
-POST /api/v1/payments/create - Procesar pago
-
-Tecnologías
-Frontend Móvil: React Native / Flutter
-
-Backend: Node.js + Express + PostgreSQL
-
-Autenticación: JWT (JSON Web Tokens)
-
-Geolocalización: Google Maps API / Mapbox
-
-Pagos: Stripe / MercadoPago
-
-Notificaciones: Firebase Cloud Messaging
-
-Chat en tiempo real: WebSockets (Socket.io)
-
-IMPORTANTE:
-
-El código es de consulta y estudio únicamente
-
-No está permitido su uso comercial sin autorización
-
-Para licencias comerciales, contactar al autor
-
-Contribuir
-Ver CONTRIBUTING.md para pautas de contribución.
-Contacto
-Autor: Enrique Aguayo H.
-
-Email: eaguayo@migst.cl
-
-GitHub: @enriqueherbertag-lgtm
-
-Agradecimientos
-Gracias a toda la comunidad de desarrolladores que inspira proyectos innovadores como este.
-
-"Conectando habilidades con necesidades, un servicio a la vez" 🔧🏠
-
-text
-
----
-
-## **CÓMO ACTUALIZAR:**
-
-1. **Abrí** tu archivo `README.md`
-2. **Borrá TODO** el contenido actual
-3. **Copiá** el texto de arriba
-4. **Pegalo**
-5. **Guardá**
-
----
-
-## **MEJORAS INCLUIDAS:**
-- **Arquitectura visual** más detallada
-- **Tecnologías** listadas claramente
-- **Instrucciones de instalación** específicas
-- **Estructura de proyecto** completa
-- **Contacto** con tus datos reales
-- **Formato más profesional**
+Enrique Aguayo H. – Mackiber Labs
