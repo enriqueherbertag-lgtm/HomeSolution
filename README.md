@@ -1,67 +1,55 @@
-# Evo-2 7B en tu GPU: IA genómica por menos de USD 1,000
+# HomeSolution: Conecta técnicos y clientes en tiempo real
 
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![EN](https://img.shields.io/badge/English-version-blue.svg)](./README.en.md)
 
-**¿Por qué gastar USD 30,000 en una H100 si puedes correr Evo-2 7B en una RTX 3090 usada por USD 700–900?**
-
-Este repositorio es un análisis técnico basado en benchmarks oficiales de NVIDIA y reportes de la comunidad. No incluye benchmarks propios ni código ejecutable todavía.
+**Una aplicación móvil estilo Uber para servicios a domicilio. Encuentra técnicos calificados cerca de ti, en minutos.**
 
 ## ¿Qué problema resuelve?
 
-Evo-2 es un modelo de IA genómica revolucionario. La versión 40B requiere GPUs empresariales H100 (USD 30,000+). Pero la versión **7B corre en hardware de consumo**.
+Encontrar un técnico de confianza es difícil. Los precios no son transparentes. No sabes quién está disponible cerca. Los técnicos calificados no tienen una plataforma para ofrecer sus servicios.
 
-**Este proyecto demuestra que no necesitas una H100 para investigar con IA genómica.**
+**HomeSolution conecta oferta y demanda en tiempo real.**
 
-## ¿Qué GPU necesito?
+## ¿Qué hace?
 
-| GPU | VRAM | Corre Evo-2 7B? | Costo (usado) |
-|-----|------|----------------|---------------|
-| RTX 3090 | 24 GB | ✅ Sí | USD 700–900 |
-| RTX 4090 | 24 GB | ✅ Sí | USD 1,200–1,500 |
-| H100 | 80 GB | ✅ 40B, 20B, 7B | USD 30,000+ |
-
-## ¿Qué velocidad esperar?
-
-| Hardware | Velocidad (nt/sec) | Confianza |
-|----------|-------------------|-----------|
-| H100 | 45 | ✅ Verificado (NVIDIA) |
-| RTX 4090 | 30–40 | 🔲 Reportes comunitarios |
-| RTX 3090 | 25–35 | 🔲 Estimado |
-
-## ¿Cuánto cuesta un equipo local?
-
-| Componente | Precio (usado) |
-|------------|----------------|
-| RTX 3090 (24 GB) | USD 700–900 |
-| 64 GB RAM | USD 100 |
-| 1 TB NVMe SSD | USD 50 |
-| **Total** | **USD 850–1,050** |
-
-## ¿Qué NO corre en RTX 3090/4090?
-
-- ❌ Evo-2 40B, 20B, 1B (requieren FP8, H100/H200)
-- ❌ Fine-tuning a escala de producción
-- ❌ Aplicaciones de baja latencia
+| Característica | Descripción |
+|----------------|-------------|
+| Geolocalización | Muestra técnicos cercanos en tiempo real |
+| Calificaciones y reseñas | Sistema transparente de reputación |
+| Chat integrado | Coordinación instantánea |
+| Pagos seguros | Stripe / MercadoPago |
+| Verificación de técnicos | Certificaciones y validación de perfiles |
+| Historial de servicios | Registro completo de trabajos |
+| Multi-categorías | Fontanería, electricidad, programación, diseño, etc. |
+| Notificaciones push | Alertas en tiempo real |
 
 ## ¿Para quién es?
 
-- Laboratorios con poco presupuesto.
-- Universidades y centros de investigación.
-- Estudiantes que quieren experimentar con IA genómica.
-- Cualquier persona que quiera correr Evo-2 sin gastar USD 30,000.
+- **Usuarios**: necesitan un técnico rápido, confiable y con precio claro.
+- **Técnicos**: quieren encontrar clientes sin pagar comisiones abusivas.
+- **Empresas de servicios**: pueden gestionar su flota de trabajadores.
 
-## Próximos pasos
+## Arquitectura
 
-1. Portar Evo-2 7B a sistemas ARM (como CORPUS).
-2. Optimizar consumo energético para operación autónoma.
-3. Integrar con sensores y actuadores para IA embebida.
+| Capa | Tecnología |
+|------|------------|
+| Frontend móvil | React Native / Flutter |
+| Backend API | Node.js + Express |
+| Base de datos | PostgreSQL |
+| Autenticación | JWT |
+| Geolocalización | Google Maps API |
+| Pagos | Stripe / MercadoPago |
+| Notificaciones | Firebase Cloud Messaging |
+| Chat en tiempo real | WebSockets (Socket.io) |
 
-Ver [CORPUS](https://github.com/enriqueherbertag-lgtm/Corpus) para arquitectura y especificaciones.
+## Estado actual
 
-## Experimentos
-
-En la carpeta `experiments/` se encuentran adaptaciones de código de terceros y pruebas de concepto. Ver `experiments/flash-moe-reference/README.md` para detalles.
+- Backend funcional.
+- API documentada.
+- Esquema de base de datos definido.
+- Frontend móvil en desarrollo.
+- Panel de administración pendiente.
 
 ## Licencia
 
@@ -77,6 +65,12 @@ Este proyecto está protegido por derechos de autor.
 - Uso comercial (incluyendo ofrecerlo como servicio, SaaS, suscripción, o cualquier uso que genere beneficio económico).
 - Modificación para entornos de producción.
 - Distribución de versiones modificadas sin autorización.
+
+Para licencias comerciales o consultas, contactar a: **eaguayo@migst.cl**
+
+## Autor
+
+**Enrique Aguayo H.** – Mackiber Labs
 
 Para licencias comerciales o consultas, contactar a: **eaguayo@migst.cl**
 
